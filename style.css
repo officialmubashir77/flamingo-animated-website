@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+html , body {
+    width: 100%;
+    height: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#background {
+    width: 100%;    
+    height: 100vh;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+}
+#left{
+    width: 70%;
+    height: 100%;
+    /* background-color: #dadada; */
+    padding: 30px 40px ;
+    position: relative;
+    overflow-y: hidden;
+
+}
+#left nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#left nav h2 {
+    cursor: pointer;
+}
+#left nav #links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px ;
+}
+#left nav #links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    opacity: .7;
+    font-weight: 500;
+}
+#left nav #links a:hover {
+    opacity: 1;
+    color: rgb(27, 57, 84);
+}
+#left nav #links a:nth-child(1) {
+    /* color: red  ; */
+    opacity: 1;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+    margin-top: 6px;
+}
+#circle{
+    width: 450px;
+    height: 450px;
+    background-image: url(./assests/images/green\ leave\ image.avif);
+    background-size: cover;
+    border-radius: 50% ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#smcircle {
+    width: 320px;
+    height: 320px;
+    background-color: #ffffff;
+    border-radius: 50% ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+#smcircle img {
+    width: 500px;
+    position: absolute;
+    top: 15%;
+    left: -50%;
+}
+#vsmcircle{
+   width: 100px;
+   height: 100px; 
+   background-image: url(./assests/images/flamingos-img-smscircle.avif);
+   background-size: cover;
+   border: 5px solid white;
+   border-radius: 50%;
+   position: absolute;
+   /* right: 0; */
+   right: -4%;
+   top: 50%;
+   /* transform: translate( widthVal , heightVal ); */
+   transform: translate(0 , -50%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#vsmcircle i {
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    background-color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#vsmcircle i:hover {
+    cursor: pointer;
+}
+#cart {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 22px;
+    cursor: pointer;
+}
+#right {
+    width: 30% ;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    padding: 30px 40px;
+}
+#right input {
+    width: 100%;
+    padding: 12px 32px;
+    border-radius: 100px ;
+    border: none;
+    background-color: #333;
+    outline: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#right h4 {
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: 30px ;  
+    opacity: .7;
+    /* text-align: center; */
+}
+#prtimg {
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+    border-radius: 3px;
+    background-image: url(./assests/images/final-prt\ img.avif);
+    background-size: cover;
+    background-position: center;
+}
+#right h3{
+    font-size: 25px;
+    margin-block: 20px;
+}
+#list {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 20px;
+}
+#list .lists {
+    display: flex;
+    align-items: start;
+    gap: 60px;
+}
+#list .lists .time-div h5{
+    font-family: 'Poppins', sans-serif ;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+} 
+#list .lists .cont-div p:nth-child(1) {
+    font-family: 'Poppins', sans-serif ;
+    font-size: 15px;
+}
+#list .lists .cont-div p:nth-child(2) {
+    font-family: 'Poppins', sans-serif ;
+    font-size: 12px;
+    line-height: 12px;
+    opacity: 0.7;
+}
